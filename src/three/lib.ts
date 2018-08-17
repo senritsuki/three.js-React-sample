@@ -6,6 +6,9 @@ export class Vector3 {
         public z: number,
     ) {}
 
+    add(x: number, y: number, z: number): Vector3 {
+        return new Vector3(this.x + x, this.y + y, this.z + z);
+    }
     updateX(x: number): Vector3 {
         return new Vector3(x, this.y, this.z);
     }
